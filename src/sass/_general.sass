@@ -8,6 +8,9 @@ nav
 	width: 100%
 	z-index: 5	
 
+.hamburger
+	display: none
+
 .menu
 	display: flex
 	justify-content: space-between
@@ -15,12 +18,12 @@ nav
 	margin: 0
 	list-style-type: none
 
-	.menu_link
+	&_link
 		font-weight: 300
 		font-size: 15px
 		color: #FFFFFF
 
-	.menu_item
+	&_item
 		border-right: 2px dotted black
 		padding-right: 28px
 		&:last-child
@@ -33,26 +36,26 @@ nav
 	height: 84px
 	background: rgba(0, 0, 0, 0.6)
 
-	.subheader_logo
+	&_logo
 		display: block
 		max-width: 100%
 		margin-top: 16px
 
-	.subheader_official
+	&_official
 		margin-top: 6px
 		font-weight: 400
 		font-size: 13px
 		color: #FFFFFF
 		opacity: 0.5
 
-	.subheader_call
+	&_call
 		margin-top: 19px
 		text-align: right
 		font-weight: 300
 		font-size: 12px
 		color: #FFFFFF
 
-	.subheader_phone
+	&_phone
 		margin-top: 8px
 		display: block
 		text-align: right
@@ -62,7 +65,7 @@ nav
 		color: #FFFFFF
 		line-height: 12px
 
-	.subheader_btn
+	&_btn
 		margin-top: 19px
 		width: 172px
 		height: 46px
@@ -82,7 +85,7 @@ nav
 	min-height: 800px
 	background: url('../img/backround_top.jpg') center (center / cover) no-repeat
 
-	.promo_header
+	&_header
 		margin: 0
 		font-weight: 900
 		font-size: 60px
@@ -91,7 +94,7 @@ nav
 		color: #FFFFFF
 		line-height: 60px
 
-	.promo_subheader
+	&_subheader
 		margin: 0
 		margin-top: 22px
 		font-weight: 700
@@ -101,7 +104,7 @@ nav
 		color: #FFFFFF
 		line-height: 36px
 
-	.promo_descr
+	&_descr
 		margin-top: 23px
 		font-weight: 400
 		font-size: 18px
@@ -109,7 +112,7 @@ nav
 		text-align: center
 		color: #FFFFFF
 
-	.promo_btn
+	&_btn
 		display: block
 		margin: 118px auto 0 auto
 		width: 259px
@@ -159,13 +162,25 @@ nav
 	padding: 18px 0 64px 0
 	color: #FFFFFF
 
-	.reasons_list
-		.reasons_list_item
+	&_list
+		&_item
 			margin-top: 16px
 			display: flex
 			justify-content: center
 			align-items: center
 
+			&_dscr
+				span
+					font-weight: 400
+					font-size: 17px
+					line-height: 21px
+					color: #1EACC7
+
+				width: 343px
+				font-weight: 300
+				font-size: 15px
+				line-height: 21px
+				color: #202020
 		.col-6
 			padding: 0
 
@@ -182,18 +197,6 @@ nav
 			background: #1EACC7
 			border-radius: 100%
 
-	.reasons_dscr
-		span
-			font-weight: 400
-			font-size: 17px
-			line-height: 21px
-			color: #1EACC7
-
-		width: 343px
-		font-weight: 300
-		font-size: 15px
-		line-height: 21px
-		color: #202020
 
 .mobile
 	min-height: 864px
