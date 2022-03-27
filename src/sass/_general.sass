@@ -64,7 +64,8 @@ nav
 		text-transform: uppercase
 		color: #FFFFFF
 		line-height: 12px
-
+	.xs-visible
+		display: none
 	&_btn
 		margin-top: 19px
 		width: 172px
@@ -197,7 +198,6 @@ nav
 			background: #1EACC7
 			border-radius: 100%
 
-
 .mobile
 	min-height: 864px
 	padding: 48px 0 79px 0
@@ -269,6 +269,7 @@ nav
 	position: relative
 	z-index: 1
 	&_backround_img
+		width: 100%;
 		position: absolute
 		top: 500px
 		z-index: -1
@@ -341,7 +342,7 @@ nav
 					background: url('../icons/icon_red_check.png') center center/cover no-repeat
 
 .world
-	min-height: 720px
+	max-height: 720px
 	background: url('../img/backround_world.jpg') center center/cover no-repeat
 	padding-top: 49px
 	.label
@@ -370,21 +371,21 @@ footer
 		width: 301px
 		height: 7px
 		background: $main-color
-	&_block
+	.footer_block
 		display: flex
 		justify-content: space-between
 		align-items: flex-start
 		padding: 32px 23px 0 23px
-	&_block>div
+	.footer_block>div
 		width: 33%
 		&:nth-child(3)
 			display: flex
 			justify-content: flex-end
-	&_social
+	.footer_social
 		width: 160px
 		display: flex
 		justify-content: space-between
-		&_item
+		.footer_social_item
 			display: flex 
 			justify-content: center
 			align-items: center
@@ -394,12 +395,12 @@ footer
 			border-radius: 100%
 			span
 				color: #fff
-	&_menu>div
+	.footer_menu>div
 		display: flex 
 		justify-content: center
 		align-items: center
 		&:nth-child(1)
-			&_item
+			.footer_menu_item
 				margin-right: 42px
 				font-weight: 300
 				font-size: 15px
@@ -408,7 +409,7 @@ footer
 				&:nth-child(3)
 					margin-right: 0px
 		&:nth-child(2)
-			&_item
+			.footer_menu_item
 				margin-right: 20px
 				font-weight: 300
 				font-size: 11px
@@ -417,16 +418,16 @@ footer
 				&:nth-child(5)
 					margin-right: 0px
 		&:nth-child(3)
-			&_language				
+			.footer_menu_language				
 				font-weight: 400
 				font-size: 11px
 				text-transform: uppercase
 				color: $main-color
-	&_apps
+	.footer_apps
 		height: 27px
 		width: 300px
 		display: flex 
-		justify-content: space-between
+		justify-content: center
 		align-items: center
 		.app_store
 			width: 93px
@@ -440,5 +441,3 @@ footer
 			width: 93px
 			height: 27px
 			background: url('../icons/windows-store-badge.png') center center/cover no-repeat
-	.xs-visible
-		display: none
