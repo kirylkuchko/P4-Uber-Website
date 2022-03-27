@@ -136,8 +136,7 @@
 		.footer_apps
 			width: 100px
 			height: 80px
-			flex-direction: column
-		
+			flex-direction: column		
 @media (max-width: 767px)
 	.menu
 		position: fixed	
@@ -208,11 +207,15 @@
 			font-size: 30px
 	.mobile
 		&_item
-			width: 220px
-			height: 195px
+			margin: 10px auto
 			padding-top: 50px 
 			&_subtitile
 				font-size: 17px
+	footer
+		.footer_social
+			display: none
+		.footer_apps
+			display: none
 @media (max-width: 575px)
 	nav
 		height: 20px
@@ -249,7 +252,7 @@
 				background-image: linear-gradient(to top, #1EACC7 0%, #4CE2FF 100%)
 	.promo
 		min-height: 400px
-		padding: 73px 0 35px 0
+		padding: 88px 0 35px 0
 		&_header
 			font-size: 30px
 			padding: 0 24px
@@ -280,8 +283,31 @@
 		.reasons_img_circle
 			width: 100px
 			height: 100px
-
 	.title
-		font-size: 16px
+		font-size: 20px
 		margin-top: 15px
 		line-height: 16px
+	.car 
+		.title
+			font-size: 20px
+			margin-top: 15px
+			line-height: 16px
+		.subtitle
+			font-size: 12px
+			margin-top: 15px
+			line-height: 16px
+		&_title
+			margin-top: 30px
+	.mobile
+		&_item
+			width: 280px
+			height: 260px
+	.world 
+		.title
+			font-size: 20px
+			margin-top: 15px
+			line-height: 16px
+		.subtitle
+			font-size: 12px
+			margin-top: 15px
+			line-height: 16px
